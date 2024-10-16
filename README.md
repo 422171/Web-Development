@@ -1,5 +1,6 @@
 # Web-Development
 This repository holds the web development projects inspired by freeCodeCamp tutorials.
+
 **FOLDER HTML:**
 The tutorial folder contains my version of main, about, index html files. These were written while learning from freeCodeCamp's youtube tutorial on HTML by Dave Gray.
 
