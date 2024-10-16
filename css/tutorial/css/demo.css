@@ -1,0 +1,33 @@
+/* demo1- changing typography settings of form elememts*/
+button, input, textarea, select {
+    font: inherit;
+}
+
+/* demo 2- Universal selector*/
+* {
+    border: 1px solid gray;
+}
+
+/* demo3- using "!important" */
+p {
+    color: purple!important;
+}
+
+/* demo4- order for pseudo styling hyperlinks */
+a {
+    text-decoration: none;/* default: underline */
+    cursor: pointer;
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover, a:focus {
+    color:dodgerblue;
+}
+
+a:active {
+    color: red;;
+}

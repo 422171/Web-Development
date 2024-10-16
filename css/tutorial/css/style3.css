@@ -1,0 +1,18 @@
+body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: paleturquoise;
+    /* background-color: #ACC8E5;
+    background-color: #2CA58D;; */
+    color: rgb(89, 0, 67); /*range from 0 to 225 */
+}
+
+p {
+    color: rgba(0, 0, 0, 0.7);
+    /* color: #909f00;
+        color: #f33 - this is short hand for codes that have pairs 
+        color: #112A46; */
+    color: hwb(240 2% 59% / 0.864);
+    
+}

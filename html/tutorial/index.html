@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--ht: hyper text:: this is what links together everything on the web-->
+<!--two areas / sections
+    one area- meta data:-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lahari">
+    <meta name="description"
+        content="This page contains all the things I am learning how to create as I learn through freeCodeCamp youtube videos">
+    <!--for word wrap like above: press "alt+z"-->
+    <title>My Web Page</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <!--credits for the image: pixabay.com-->
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <!--<style>
+            html {
+                font-size: 22px
+            }
+
+            body {
+                background-color: #333;
+                color: whitesmoke;
+            }
+        </style>-->
+</head>
+<!--other area- data seen in browser:-->
+
+<body>
+    <header>
+        <!--only one h1 per a html page-->
+        <h1>Hello World!</h1>
+
+        <nav aria-label="primary-navigation">
+            <!--Use <h2 id="primary-navigation">Primary Navigation</h2> in case of aria-labelledby="primary-navigation"
+            Then u will be able to see the "Primary Navigation" (text inside the h2) as the title above the list that follows
+        But rest assured that both these are equally accessible to screen readers and other technologies -->
+            <ul>
+                <li>
+                    <a href="#html">Learn HTML</a>
+                </li>
+                <li>
+                    <a href="#naruto">About Naruto</a>
+                </li>
+                <li>
+                    <a href="#contact">contact me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+    <!--only one main per a html page-->
+    <main>
+        <!--hr: stands for horizontal rule-->
+        <!--Use "Shift+Alt+F" for auto formatting-->
+        <article id="html">
+            <h2>I'm ready to learn HTML</h2>
+            <p>This is my web page.</p>
+            <!--To copy multiple lines, select the lines, press "shift+alt+downArrow" or "shift+alt+upArrow", whichever suits you.-->
+            <div>
+                <!--I originally added <section> element here, but replaced it with <div> element because of the validation error:"Section lacks heading"
+                    To resolve this: either use  h2-h6 elements to add identifying headings to all sections
+                        or else use a div element instead for any cases where no heading is needed.
+                    -->
+                <figure>
+                    <img src="icon.png" alt="html icon" title="webpage icon" width="200">
+                    <figcaption>This is an icon of html</figcaption>
+                </figure>
+            </div>
+            <section>
+                <h3>My daily schedule</h3>
+                <p>Let me tell you how: </p>
+                <!--ol: ordered list
+            li: list item-->
+                <ol>
+                    <li>...I learn more about web dev.</li>
+                    <li>...I learn more about web dev.</li>
+                    <li>...I learn more about web dev.</li>
+                </ol>
+                <aside>
+                    <details>
+                        <summary>Guess the <mark>no. of hrs</mark> I took to code this web page</summary>
+                        <p>The course video was <time datetime="PT4H">4 hrs</time> but I think I took a lot longer than
+                            that, almost <time datetime="PT8H">double of it</time>.<br>
+                            I started at <time datetime="10:00">10 am</time> yesterday and took many breaks, now it is
+                            almost <time datetime="13:30">1:30 pm</time>
+                        </p>
+                    </details>
+                </aside>
+                <br>
+                <table>
+                    <!--tr: table row
+                td: table data
+                th: table header-->
+                    <caption>Estimated time took to cover the course <br> [chapter-wise]</caption>
+                    <thead>
+                        <tr>
+                            <th>session</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Chapter covered</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">Yesterday</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                <time datetime="10:00">10am</time>-<time datetime="14:00">2pm</time>
+                            </td>
+                            <td>Head Element, Text Basics and List Types</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>
+                                <time datetime="22:00">10pm</time>-<time datetime="23:10">11:10pm</time>
+                            </td>
+                            <td>Add Links and Add Images</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Today</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>
+                                <time datetime="10:00">10am</time>-<time datetime="15:00">3pm</time>
+                            </td>
+                            <td>Semantic Tags and Create Tables</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>
+                                <time datetime="16:00">4pm</time>-<time datetime="17:00">5pm</time>
+                            </td>
+                            <td>Forms & Inputs</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">3</th>
+                            <td rowspan="2">Other Things to do</td>
+                            <td>Validation</td>
+                        </tr>
+                        <tr>
+                            <td>Project</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">And that's what it takes to become a web devoloper.
+                                Just eat, sleep, code... and recharge!
+                            </td>
+                        </tr>
+                    </tfoot>
+
+                    <!--semantics used for table:
+                caption
+                thead
+                scope for "th"s
+                Should you choose to use "id" instead of "scope" in "th", then you would have to add "headers" in each datacell(i.e., td)
+            Note again: schemantics are for the purpose of helping assistive technology such as a screen reader to get an understanding of the web page-->
+                </table>
+            </section>
+        </article>
+
+        <hr>
+
+        <article id="naruto">
+            <h2>I've also watched <abbr title="NARUTO UZUMAKI is a famous Japanese anime written by Kishimoto.">
+                    <a href="https://narutomania.naruto-official.com/en/">NRO</a></abbr></h2>
+            <p>I DON'T know the color of itachi's nails</p>
+            <p>But I'm pretty sure that <em>Pain's is red</em> and <em>Konan's yellow!</em></p>
+            <!--To copy multiple lines, select the lines, press "shift+alt+downArrow" or "shift+alt+upArrow", whichever suits you.-->
+
+            <section>
+                <!--Adding the section (semantic tags) doesn't change how the web page looks, but it does change how the browser interprets and adds benefit for assistive technologies.-->
+                <h3>List of akatsuki:</h3>
+
+                <p>These are rebellious, gifted individuals who paint their nails.<br> They wear long black cloaks with
+                    red
+                    clouds in white border symbols</p>
+
+                <dl>
+                    <!--dl: description list
+                dt: description term
+                dd: description detail-->
+                    <dt>Itachi</dt>
+                    <dd>A genjutsu user with Mangekyou sharingan</dd>
+                    <dt><img src="img/itachi.png" alt="Itachi's silhoutte after the infamous Uchiha massacre"
+                            title="I really love this episode" width="150"></dt>
+                    <!--I did the above by initially typing "img" and pressing "tab"-->
+                    <!--Actually, width amd height can be overrun by css
+            but we are anyway providing them inorder to make the browser have a decent idea of what's coming. 
+        Like, when a pop-up ad comes, the whole website gets its contents rearranged. Inorder to put the contents of the webpage in correcet places even when the pop-up is yet loading, one could use the height width attributes(?, may be) as used above.-->
+                    <dd>
+                        <h3>Note:</h3>
+                        <figure>
+                            <figcaption>
+                                Itachi is seen as a hero in the shadows by many.
+                            </figcaption>
+                            <p>
+                                <code>
+                    &lt;h3&gt;This line is special. Go see it in the code&lt;/h3&gt;
+                </code>
+                            </p>
+                        </figure>
+                    </dd>
+                    <dt>Kisame</dt>
+                    <dd>A fish-man with Samehada</dd>
+
+                    <dt>Hidan</dt>
+                    <dd>An immortal maniac who is a Jashin follower</dd>
+
+                    <dt>Deidara</dt>
+                    <dd>The kid who shouts "Art is explosion"</dd>
+
+                    <dt>Kakuzu</dt>
+                    <dd>The finance dealer who is almost immortal</dd>
+
+                    <dt>Tobi</dt>
+                    <dd>Everything he does is an act</dd>
+
+                    <dt>Sasori</dt>
+                    <dd>He looks like a kid with family-problems</dd>
+
+                    <dt>Pain</dt>
+                    <dd>He is not one but six, but the real one's not among them </dd>
+                    <dd><img src="img/pain.png" alt="Pain" title="The akatsuki captain pain" width="300" height="200">
+                    </dd>
+                    <!--If u want to test out your really cool "alt" argument, try messing with the src argument. If it is not provided correctly, you'll get to see the text in "alt" -->
+                    <dt>Konan</dt>
+                    <dd>She's the paper angel with a flower on her head</dd>
+
+                    <dt>Orochimaru</dt>
+                    <dd>The snake who finally achieved what he wanted</dd>
+
+                </dl>
+
+                <figure>
+                    <img src="img/rinnegan.png" alt="Rinnegan" title="The reason pain has 6 forms" width="120"
+                        loading="lazy">
+                    <!--By setting loading=lazy, you allow the web page to load faster(say, when you have a 50 or so images to load), because by default- loading is set to "active"-->
+                    <figcaption>
+                        Rinnegan eye posessed by Akatsuki captain "Pain"
+                    </figcaption>
+                </figure>
+
+                <address>
+                    At the Gedo Statue<br>
+                    The Cave, 5 or so paper bombs<br>
+                    After the river, Somewhere near Konoha
+                </address>
+            </section>
+            <!-- This a comment-->
+
+            <section>
+                <h3>Characters I admire:</h3>
+                <p>There are many inspirational characters in this anime and <strong> I really love all of them</strong>
+                </p>
+                <!--Ul: unordered list
+                li: list item-->
+                <Ul>
+                    <li> Gaara</li>
+                    <li> Rock Lee</li>
+                    <li> Guy sensei</li>
+                    <li> Kakashi sensei</li>
+                    <li> Jiraiya sensei</li>
+                    <li> Naruto</li>
+                    <li> Itachi</li>
+                    <li> Minato</li>
+                    <li> Obito</li>
+                </Ul>
+                <!--Add more characters-->
+                <div></div>
+                <span></span>
+            </section>
+        </article>
+        <hr>
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>Let me hear from you!</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <!--A form has labels and inputs.-->
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <!--legend is almost like a "caption+title+border" thing-->
+                    <p>
+                        <label for="givenName">Given Name:</label>
+                        <input type="text" name="givenName" id="givenName" placeholder="Naruto" autocomplete="on"
+                            required autofocus>
+                    </p>
+                    <!--autofocus can only be assigned to one element throughout the form. When the page loads, that element is what you'll see first.-->
+                    <p>
+                        <label for="surName">Sur Name:</label>
+                        <input type="text" name="surName" id="surName" placeholder="Uzumaki" autocomplete="on" required>
+                        <!--Note: the "id" in input MUST MATCH with the "for" in label. As for the "name", it can be anything.Name is how the given input is identified at the server level-->
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" autocomplete="off" id="password"
+                            placeholder="secret password" required>
+                    </p>
+                    <p>
+                        <label for="phone">phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="7777777777"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </p>
+                    <p>
+                        <label for="decade">Favourite Decade:</label>
+                        <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1990">
+                    </p>
+                    <p>
+                        <label for="anime">Favourite Anime</label>
+                        <select name="anime" id="anime" multiple size="7">
+                            <optgroup label="Naruto Saga">
+                                <option value="naruto">Naruto</option>
+                                <option value="shippuden" selected>Shippuden</option>
+                                <!--Not assigning "selected" to any option will display the first option as default in the form-->
+                                <option value="boruto">Boruto</option>
+                            </optgroup>
+                            <optgroup label="Non-Naruto shows">
+                                <option value="spyXFamily">Spy x Family</option>
+                                <option value="jujutsuKaisen">Jujutsu Kaisen</option>
+                                <option value="attackOnTitan">Attack On Titan</option>
+                                <option value="onePiece">One Piece</option>
+                                <option value="hunterXhunter">Hunter x Hunter</option>
+                            </optgroup>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <!-- <p>
+                    <label for="anime">Favourite Anime:</label>
+                    <input type="text" name="anime" id="anime" list="anime-list">
+                    <datalist id="anime-list">
+                        <option value="naruto">
+                        <option value="boruto">
+                        <option value="shipudden">
+                        <option value="jujutsu kaisen">
+                        <option value="one piece">
+                        <option value="spy x family">
+                        <option value="hunter x hunter">
+                        <option value="attack on titan">
+                        <option value="other">
+                    </datalist>
+                </p> -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Who is your favourite?</legend>
+                    <p>
+                        <input type="radio" name="character" id="itachi" value="itachi">
+                        <label for="itachi">Itachi</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="character" id="kisame" value="kisame">
+                        <label for="kisame">Kisame</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="character" id="deidara" value="deidara">
+                        <label for="deidara">Deidara</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="character" id="tobi" value="tobi">
+                        <label for="tobi">Tobi</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="character" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>What's your Ninja way?</legend>
+                    <p>
+                    <input type="checkbox" name="jutsu" id="ninjutsu" value="ninjutsu">
+                        <label for="ninjutsu">Ninjutsu</label>
+                    </p>
+                    <p>
+                    <input type="checkbox" name="jutsu" id="genjutsu" value="genjutsu">
+                        <label for="genjutsu">Genjutsu</label>
+                    </p>
+                    <p>
+                    <input type="checkbox" name="jutsu" id="taijutsu" value="taijutsu">
+                        <label for="taijutsu">Taijutsu</label>
+                    </p>
+                    <p>
+                    <input type="checkbox" name="jutsu" id="others" value="others">
+                        <label for="others">Other (what, like a samurai?)</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Leave a note!</legend>
+                    <label for="message">Your message</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here!"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Lahari</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="/">Go back to Top</a>
+        </p>
+    </footer>
+</body>
+
+<!-- Markup Validation Service: browse "validator.w3.org", click "Validate by File Upload", Choose your html file and click "check"-->
+<!--And if you're worthy enough, the result will be: "Document checking completed. No errors or warnings to show."-->
+
+</html>
