@@ -5,6 +5,10 @@ const port = process.env.PORT || 3000;
 
 // disable default favicon to avoid taco icon
 app.get('/favicon.ico', (req, res) => res.status(204).end());
+// serve freeCodeCamp logo
+app.get('/freecodecamp.ico', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'freecodecamp.ico'));
+});
 
 // serve LTS pages under /lts (home.html, hours.html, contact.html)
 app.use('/lts', express.static(path.join(__dirname, 'html/project')));
