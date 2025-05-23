@@ -1,8 +1,0 @@
-html- hyper text machine language (?)
-css- cascading style sheet 
-
-html is the foundation & structure
-It provides meaning (through semantics)
-
-css is more like a paint, wallpaper, carpet...
-It makes the appearance/presentation of the web page

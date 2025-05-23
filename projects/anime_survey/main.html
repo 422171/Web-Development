@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Inline blank favicon to prevent taco icon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Welcome to The Anime Survey</h1>
+
+    <p id="description">Take this survey and help us improve our services and provide users the comfort you seek</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <legend><b>Tell Us About Yourself!</b></legend>
+      <label id="name-label">Your name:
+        <input id="name" type="text" required placeholder="Albus Dumbledore ;)"/>
+      </label>
+      <label id="email-label">Your email:
+        <input id="email" type="email" required placeholder="Format: xyz@gmail.com" />
+      </label>
+      <label id="number-label">Your age? <input class="inline" id="number" type="number" min="6" max="120" placeholder="e.g: 12" />
+      </label>
+      </fieldset>
+      <fieldset>
+        <legend><b>Let's begin!!</b></legend>
+      <label for="dropdown">Your favourite anime:
+        <select id="dropdown">
+          <option name="fav-anime" value="">Select one</option>
+          <option name="fav-anime" value=1>Naruto</option>
+          <option name="fav-anime" value=2>One piece</option>
+          <option name="fav-anime" value=3>Spy x Family</option>
+          <option name="fav-anime" value=4>Death Note</option>
+          <option name="fav-anime" value=5>My Hero Academia</option>
+          <option name="fav-anime">Other!! :(</option>
+        </select>
+        </label>
+        <p class="form-question">How often do you watch anime:</p>
+        <label class="schedule"><input type="radio" name="schedule" value=1 />Daily</label>
+        <label class="schedule"><input type="radio" name="schedule" value=2/>Nearly Daily</label>
+        <label class="schedule"><input type="radio" name="schedule" value=3/>Weekends</label>
+        <label class="schedule"><input type="radio" name="schedule" value=4/>Once in a blue moon</label>
+        </fieldset>
+        <fieldset>
+        <p class="form-question">Which of these characters do you know or remember? <a class="newLine">(select all that apply)</a></p>
+        <label class="characters">
+          <input type="checkbox" value="light"/>Light Yagami
+        </label>
+        <label class="characters">
+          <input type="checkbox" value="L"/>L Lawliet
+        </label>
+        <label class="characters">
+          <input type="checkbox" value="ryuk"/>Ryuk
+        </label>
+        <label class="characters">
+          <input type="checkbox" value="rem"/>Rem
+        </label>
+        <label class="form-text" for="thoughts">What makes anime special?</label>
+        <textarea id="thoughts" rows=5 cols=50 placeholder="Tell us what you love the most about anime...(may be share how anime inspires you or makes happy?)" ></textarea>
+        <label class="form-text" for="advice">Lastly, any suggetions for us?</label>
+        <textarea id="advice" rows=4 cols=40 placeholder="What other ideas do you deem would be a good fit to add to the survey?                    please do share here..." ></textarea>
+        </fieldset>
+          <button id="submit" type="submit">Done!</button>
+          <p id="instruct">(Click to Submit!)</p>
+    </form>
+  </body>
+  <foot>
+    This survey form is created as a part of <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive web design course</a> offered by <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a> by user @four_leaf_clover4.
+    <a class="credits" href="https://www.kolpaper.com/"> Background image credits: kolpaper.com</a>
+  </foot>
+</html>
