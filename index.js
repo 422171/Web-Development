@@ -12,6 +12,8 @@ app.get('/freecodecamp.ico', (req, res) => {
 
 // serve LTS pages under /lts (home.html, hours.html, contact.html)
 app.use('/lts', express.static(path.join(__dirname, 'html/project')));
+app.use('/anime_survey', express.static(path.join(__dirname, '/projects/anime_survey')));
+app.use('/tribute_page', express.static(path.join(__dirname, '/projects/tribute_page')));
 // serve other static assets (projects folder, etc.)
 app.use(express.static(__dirname));
 
@@ -42,12 +44,12 @@ app.get('/', (req, res) => {
           <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl p-6 shadow-lg transform transition hover:scale-105">
             <h3 class="text-2xl font-bold text-blue-800">Anime Survey</h3>
             <p class="mt-2 text-white opacity-90">Participate in a fun survey to share your favorite anime series.</p>
-            <a href="/projects/anime_survey/main.html" class="mt-4 inline-block px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-lg shadow-md hover:from-purple-700 hover:to-indigo-700">Visit</a>
+            <a href="/anime_survey/main.html" class="mt-4 inline-block px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-lg shadow-md hover:from-purple-700 hover:to-indigo-700">Visit</a>
           </div>
           <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl p-6 shadow-lg transform transition hover:scale-105">
             <h3 class="text-2xl font-bold text-blue-800">Tribute Page</h3>
             <p class="mt-2 text-white opacity-90">Explore a styled tribute page honoring a beloved hero.</p>
-            <a href="/projects/tribute_page/main.html" class="mt-4 inline-block px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-lg shadow-md hover:from-purple-700 hover:to-indigo-700">Visit</a>
+            <a href="/tribute_page/main.html" class="mt-4 inline-block px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-lg shadow-md hover:from-purple-700 hover:to-indigo-700">Visit</a>
           </div>
           <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl p-6 shadow-lg transform transition hover:scale-105">
             <h3 class="text-2xl font-bold text-blue-800">Little Taco Shop</h3>
