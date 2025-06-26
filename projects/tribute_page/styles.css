@@ -24,9 +24,9 @@ h2{
   text-align: center;
 }
 #image {
-  max-width: 100%;
+  max-width: 78%;
   max-height: 420;
-  aspect-ratio: 673/420;
+  aspect-ratio: 48/27;
   height: auto;
 }
 #img-caption > p {
